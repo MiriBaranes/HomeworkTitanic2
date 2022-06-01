@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.io.FileNotFoundException;
 
-class Main extends JFrame {
+class MainWindow extends JFrame {
 
-    public Main() {
+    public MainWindow() {
         this.setLayout(null);
         this.setResizable(false);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

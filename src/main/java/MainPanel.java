@@ -66,7 +66,6 @@ public class MainPanel extends BasicPanel {
             else
                 this.select[index] = jTextField.getText();
         }
-        System.out.println(index + " -  " + jTextField.getText().length());
     }
 
     public void initTextField(String keys, int y) {
@@ -168,7 +167,7 @@ public class MainPanel extends BasicPanel {
 
 
     public static void main(String[] args) {
-        Main main = new Main();
+        MainWindow main = new MainWindow();
     }
 
 }

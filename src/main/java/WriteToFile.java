@@ -10,7 +10,7 @@ public class WriteToFile {
     private static final String NAME_FILE = ".csv";
     private static final String PATH_PASSENGERS = "C:\\FILE\\1\\filter"; ///name of exel fields but its have to contain NAME_FILE change only the name file here!!
     private static final String PATH_STATISTICS = "C:\\FILE\\1\\Statistics.txt";/// name of statistic file
-    private static final String PATH_NUMBER = "C:\\FILE\\1\\num.txt";
+    private static final String PATH_NUMBER = "C:\\FILE\\1\\num.txt";///Save the number of searches! change it to your path
 
     private WriteToFile() {
     }
@@ -35,7 +35,6 @@ public class WriteToFile {
             FileWriter fileWriter = new FileWriter(path + num_to_add);
             String list = add + toAdd.toString().replace("[", "");
             list = list.replace("]", "");
-            System.out.println(list);
             fileWriter.write(list);
             fileWriter.close();
         } catch (IOException e) {
