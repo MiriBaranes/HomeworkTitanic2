@@ -16,8 +16,8 @@ public class MainPanel extends BasicPanel {
     private static final int BOX_SIZE = 3;
     private static final String BY_CONTAINS = "name --->";
     private static final String[] MIX_MAX_SEARCH = {"id min number --->", "id max number --->", "ticket price min --->", "ticket price max --->"};
-    public static final String FIELD_NAME="waves-730260985.webp";
-    public static final String TITLE="Survived passenger's search:";
+    public static final String FIELD_NAME = "97fa2a21fc6c459d9f3ea41b2e138414.jpg";
+    public static final String TITLE = "Survived passenger's search:";
     private final ArrayList<JComboBox<String>> box;
     private final ArrayList<JTextField> textFromUser;
     private Button search;
@@ -26,7 +26,7 @@ public class MainPanel extends BasicPanel {
     private JLabel messageToUser;
 
     public MainPanel() {
-        super(0, 0, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT, FIELD_NAME,TITLE );
+        super(0, 0, Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT, FIELD_NAME, TITLE);
         this.box = new ArrayList<>();
         this.textFromUser = new ArrayList<>();
         this.select = new Object[EQUALS_SEARCH.length + MIX_MAX_SEARCH.length + 1];

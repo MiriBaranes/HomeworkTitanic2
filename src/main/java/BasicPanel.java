@@ -40,7 +40,7 @@ public class BasicPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         if (this.backGround != null) {
-            this.backGround.paintIcon(this, g, 0, 100);
+            this.backGround.paintIcon(this, g, -100, 100);
         }
     }
 
@@ -104,9 +104,10 @@ public class BasicPanel extends JPanel {
         JLabel jLabel = addJLabel(title, 0, y, Constants.LABEL_WIDTH, Constants.LABEL_HEIGHT, 10, Color.black);
         return addTextField("", jLabel.getX() + jLabel.getWidth() + 1, y, Constants.COMBO_BOX_WIDTH, Constants.COMBO_BOX_HEIGHT);
     }
-    public Button addButton(int x, int y, int w, int h,String title){
-        Button button=new Button(title);
-        button.setBounds(x,y,w,h);
+
+    public Button addButton(int x, int y, int w, int h, String title) {
+        Button button = new Button(title);
+        button.setBounds(x, y, w, h);
         button.setBackground(Color.cyan);
         this.add(button);
         return button;

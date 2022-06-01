@@ -9,7 +9,7 @@ public class StatisticsConstants {
     public static final Integer[] RELATIVES = {0, 1};
     public static final String EMBARKATION_TYPE = "Embarkation place:";
     public static final String RELATIVE_TYPE = "Relative: ";
-    public static final Double HUNDRED_PERCENT=100.0;
+    public static final Double HUNDRED_PERCENT = 100.0;
     public static final String FARE_TYPE = "Fare: (min including , max- not including)";
     public static final String GENDER_TYPE = "Gender: ";
     public static final String AGE_TYPE = "Age: (min including , max- not including)";

@@ -6,12 +6,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class WriteToFile {
-    private static final String NAME_CATEGORIES="List sort: ,Passenger id, Survived,pClass,name,gender,age,sibSp,parch,ticket,cabin,fare,embarked\n,";
+    private static final String NAME_CATEGORIES = "List sort: ,Passenger id, Survived,pClass,name,gender,age,sibSp,parch,ticket,cabin,fare,embarked\n,";
     private static final String NAME_FILE = ".csv";
-    private static final String PATH_PASSENGERS = "C:\\FILE\\1\\filter";
-    private static final String PATH_STATISTICS = "C:\\FILE\\1\\Statistics.txt";
+    private static final String PATH_PASSENGERS = "C:\\FILE\\1\\filter"; ///name of exel fields but its have to contain NAME_FILE change only the name file here!!
+    private static final String PATH_STATISTICS = "C:\\FILE\\1\\Statistics.txt";/// name of statistic file
     private static final String PATH_NUMBER = "C:\\FILE\\1\\num.txt";
-    private WriteToFile(){}
+
+    private WriteToFile() {
+    }
+
     public static void writeToFile(List<Object> list, int type) {
         if (type == Constants.PASSENGER_TYPE) {
             writeListToFile(list, PATH_PASSENGERS);

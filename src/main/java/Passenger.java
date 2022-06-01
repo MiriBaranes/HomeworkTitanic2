@@ -49,7 +49,7 @@ public class Passenger implements Comparable<Passenger> {
         _ticket = split[TICKET];
         _cabin = split[CABIN];
         _fare = makeStringToBeDouble(split[FARE]);
-        _formatName =getFormatName();
+        _formatName = getFormatName();
         _embarked = null;
         if (split.length > 12) {
             _embarked = split[EMBARKED];
